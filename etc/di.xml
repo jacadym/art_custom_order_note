@@ -1,0 +1,10 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xsi:noNamespaceSchemaLocation="urn:magento:framework:ObjectManager/etc/config.xsd">
+    <preference for="Art\CustomOrderNote\Api\CustomOrderRepositoryInterface" type="Art\CustomOrderNote\Model\CustomOrderRepository" />
+    <type name="Magento\Sales\Api\OrderRepositoryInterface">
+        <plugin name="art_custom_order_note_extension_attribute"
+                type="Art\CustomOrderNote\Plugin\OrderRepositoryPlugin"
+        />
+    </type>
+</config>

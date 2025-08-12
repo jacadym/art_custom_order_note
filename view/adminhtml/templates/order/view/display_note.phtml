@@ -1,0 +1,13 @@
+<?php
+/** @var Art\CustomOrderNote\Block\Adminhtml\Order\View\DisplayCustomOrderNote $block */
+$note = $block->getCustomOrderNote();
+if (!empty($note)):
+?>
+<span class="title">&nbsp;</span>
+<div class="admin__page-section-item-title">
+    <span class="title">Custom Order Note</span>
+</div>
+<div class="admin__page-section-item-content">
+    <span><?= $note; ?></span>
+</div>
+<?php endif; ?>
